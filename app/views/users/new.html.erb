@@ -1,0 +1,5 @@
+<h1>New user</h1>
+
+<%= render 'form' %>
+<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+<%= link_to 'Back', users_path %>

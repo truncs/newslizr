@@ -5,7 +5,7 @@ gem 'rails', '3.1.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'mysql2'
 
 
 # Gems used only for assets and not required
@@ -29,6 +29,35 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+# JS Runtime
+gem 'therubyracer', require: "v8"
+
+# Readability gem
+ gem "ruby-readability", :require => 'readability'
+
+# Nokogiri HTML/XML Parser
+gem 'nokogiri'
+
+# Twitter Bootstrap
+gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'
+
+# Pagination
+gem 'will_paginate', '~> 3.0'
+
+# Tactful Tokenizer
+
+gem 'tactful_tokenizer'
+
+#Foreigner 
+gem 'foreigner'
+
+# Omniauth 
+gem "omniauth-facebook"
+
+# Devise
+gem "devise"
+
 
 group :test do
   # Pretty printed test output

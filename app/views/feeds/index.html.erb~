@@ -1,0 +1,30 @@
+<h1>Listing articles</h1>
+
+<p id="notice"><%= notice %></p>
+<table class="zebra-striped">
+  <tr>
+    <th>Id</th>
+    <th>Content</th>
+    <th>Headline</th>
+    <th>Url</th>
+    <th>Event</th>
+    <th>Source</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @articles.each do |article| %>
+  <tr>
+    <td><%= article.id %></td>
+    <td><%= truncate(article.content, :length => 25, :omission =>$
+    <td><%= article.headline %></td>
+    <td><%= article.url %></td>
+    <td><%= article.event_id %></td>
+    <td><%= article.source_id %></td>
+    <td><%= link_to 'Show', article %></td>
+    <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'Destroy', article, confirm: 'Are you sure?',$
+  </tr>
+<% end %>
+</table>

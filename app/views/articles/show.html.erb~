@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>                                  
+
+<p>
+  <b>Headline:</b>
+  <%= @article.headline %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @article.content %>
+</p>

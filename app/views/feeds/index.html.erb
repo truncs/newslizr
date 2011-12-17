@@ -1,0 +1,17 @@
+<h1>Listing articles</h1>
+
+<p id="notice"><%= notice %></p>
+<table class="zebra-striped">
+  <tr>
+    <th>News</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @articles.each do |article| %>
+  <tr>
+    <td><%= link_to article.headline, article %></td>
+  </tr>
+<% end %>
+</table>

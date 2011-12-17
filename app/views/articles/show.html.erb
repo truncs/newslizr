@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>                                  
+<br />
+<br /><br />
+<p>
+ <h1><%= @article.headline %></h1> 
+</p>
+
+<font size="5px">
+<p>
+    <%= @article.content.html_safe %>
+</p>
+</font>
